@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 85px;
+    width: 100%;
+    background: rgb(12, 79, 39);
+    background: linear-gradient(124deg, rgba(12, 79, 39, 1) 0%, rgba(7, 255, 131, .5) 61%);
+}
+
+.page_header .container {
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.overlay {
+    position: relative;
+}
+
+.page-logo {
+    line-height: 85px;
+}
+.logo_img {
+    width:110px;
+}
+.nav_bar {
+    display: flex;
+    line-height: 85px;
+    margin-right: 50px;
+}
+
+.nav_list {
+    padding: 0 20px;
+    text-align: center;
+    font-weight:700;
+}
+
+.nav_list:hover {
+    background: rgb(12, 79, 39);
+    background: linear-gradient(124deg, rgba(12, 79, 39, 1) 0%, rgba(37, 52, 44, 0.4964110644257703) 61%);
+}
+
+.nav_list__link {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background: url("https://cdn.pixabay.com/photo/2018/07/20/15/06/insect-3550858_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+    box-shadow: 0 2px #8cc12c;
+}
+
+.banner .container {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_title {
+    font-size: 72px;
+    width: 100%;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    opacity: .8;
+}
+
+.banner_underscore {
+    text-decoration: underline;
+}
+
+.banner_text {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    text-indent: 80px;
+}
+
+.page_content .container {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small_article {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    /*margin-top: 50px;*/
+    align-items: center;
+    max-width: 350px;
+}
+
+.article_img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.article_title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #8cc12c;
+}
+
+.article_text {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.article_btn {
+    text-decoration: none;
+    color: #fff;
+    border: 5px solid #8cc12c;
+    border-radius: 20px;
+    padding: 10px;
+    background: #8cc12c;
+}
+
+.small_article:first-child .article_btn {
+    margin-top: 48px;
+}
+
+.article_btn:hover {
+    background: #044424;
+}
+
+.page_footer {
+    background: lightgreen;
+    height: 200px;
+    line-height: 50px;
+}
+
+.footer_bar .nav_list__link {
+    color: black;
+}
